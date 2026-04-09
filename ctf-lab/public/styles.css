@@ -1,0 +1,123 @@
+:root {
+  --bg: #0d1117;
+  --text: #c9d1d9;
+  --green: #00ff41;
+  --cyan: #00b4d8;
+  --panel: #111827;
+  --border: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.warning-banner {
+  background: #2b1d00;
+  border-bottom: 1px solid #d29922;
+  color: #f2cc60;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 0 16px 28px;
+}
+
+h1,
+h2 {
+  color: var(--green);
+  font-family: "Courier New", Courier, monospace;
+}
+
+a,
+label {
+  color: var(--cyan);
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+
+input {
+  background: #0b1220;
+  color: var(--text);
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+input:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+button {
+  background: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 6px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00340f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #30363d;
+  padding: 10px;
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.result {
+  background: #132032;
+  border: 1px solid #1d4f7a;
+  border-left: 3px solid var(--cyan);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.logo {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: var(--green);
+  font-family: "Courier New", Courier, monospace;
+}

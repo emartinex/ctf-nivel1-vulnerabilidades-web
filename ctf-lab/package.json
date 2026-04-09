@@ -1,0 +1,22 @@
+{
+  "name": "ctf-lab",
+  "version": "1.0.0",
+  "description": "Laboratorio CTF intencionalmente vulnerable para uso educativo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ctf",
+    "security",
+    "education",
+    "sql-injection",
+    "xss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "express": "^4.21.2"
+  }
+}

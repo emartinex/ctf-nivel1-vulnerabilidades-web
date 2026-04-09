@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTF Lab - Login</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="warning-banner">⚠️ Entorno de laboratorio CTF — Solo uso educativo</div>
+    <main class="container">
+      <div class="card">
+        <div class="logo">[ CTF-LAB AUTH ]</div>
+        <h1>Bienvenido al laboratorio de vulnerabilidades web</h1>
+        <p>
+          Este entorno contiene fallos intencionales para práctica académica de ciberseguridad.
+        </p>
+      </div>
+
+      <form class="card" action="/login" method="POST">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="admin" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="••••••••" required />
+
+        <button type="submit">Iniciar sesión</button>
+      </form>
+
+      <p><a href="/buscar">Ir al buscador de inventario</a></p>
+    </main>
+  </body>
+</html>

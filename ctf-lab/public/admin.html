@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTF Lab - Admin</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="warning-banner">⚠️ Entorno de laboratorio CTF — Solo uso educativo</div>
+    <main class="container">
+      <section class="card">
+        <h1>Panel administrativo</h1>
+        <p>Acceso concedido. Flag del reto SQLi:</p>
+        <p id="flag-view" class="result">Cargando flag...</p>
+      </section>
+      <p><a href="/buscar">Ir a buscador</a></p>
+    </main>
+
+    <script>
+      fetch("/admin-data")
+        .then((res) => res.json())
+        .then((data) => {
+          document.getElementById("flag-view").textContent = data.flag || "Flag no disponible";
+        })
+        .catch(() => {
+          document.getElementById("flag-view").textContent = "Error cargando flag";
+        });
+    </script>
+  </body>
+</html>
